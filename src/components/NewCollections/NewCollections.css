@@ -1,0 +1,34 @@
+.new-collections{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.new-collections hr{
+    margin-bottom: 50px;
+}
+.new-collection-items{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 30px;
+    
+}
+
+@media (max-width:1240px){
+    .new-collection-items{
+        grid-template-columns: 1fr 1fr;
+        gap: 80px;
+    }
+}
+
+
+@media (max-width:768px){
+    .new-collection-items{
+        grid-template-columns: 1fr ;
+        gap: 50px;
+    }
+
+    .new-collection-items img{
+        width: 250px;
+    }
+}
