@@ -11,6 +11,7 @@ const Popular = () => {
         {data.map((item) => {
           return (
             <Item
+              className="item-inside"
               key={item.id}
               name={item.name}
               image={item.image}

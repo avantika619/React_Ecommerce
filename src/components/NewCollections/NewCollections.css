@@ -14,10 +14,16 @@
     
 }
 
+@media (max-width:1440px){
+    .new-collection-items{
+        gap: 100px;
+    }
+}
+
 @media (max-width:1240px){
     .new-collection-items{
         grid-template-columns: 1fr 1fr;
-        gap: 80px;
+        gap: 90px;
     }
 }
 
@@ -30,5 +36,11 @@
 
     .new-collection-items img{
         width: 250px;
+    }
+}
+
+@media (min-width:1440px){
+    .new-collection-items{
+        gap: 110px;
     }
 }

@@ -18,17 +18,24 @@ hr{
     border-radius: 10px;
 }
 
+
 .item-list{
     display: grid;
-    grid-template-columns: repeat(4,1fr);
-    margin-top: 50px;
-    gap: 30px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 100px;
 }
+
+@media (max-width:1440px) {
+    .item-list{
+        column-gap: 100px;
+    }
+}
+
 
 @media (max-width:1240px){
     .item-list{
         grid-template-columns: 1fr 1fr;
-        gap: 80px;
+        gap: 100px;
     }
 }
 
@@ -48,4 +55,8 @@ hr{
     }
 }
 
-
+@media (min-width:1441px) {
+    .item-list{
+        column-gap: 110px;
+    }
+}
