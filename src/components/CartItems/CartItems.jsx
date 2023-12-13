@@ -4,13 +4,14 @@ import { ShopContext } from "../../context/ShopContext";
 import removeIcon from "../assets/cart_cross_icon.png";
 
 const CartItems = () => {
-  const { cartItem, allProduct, removeFromCart,totalCartAmount } = useContext(ShopContext);
+  const { cartItem, allProduct, removeFromCart,getTotalCartAmount } = useContext(ShopContext);
   console.log(cartItem);
   return (
     <div className="cart-items">
+      <div className="added-items">
       <div className="cartitems-format-main">
         <p>Products</p>
-        <p>Title</p>
+        <p className="title">Title</p>
         <p>Price</p>
         <p>Quantity</p>
         <p>Total</p>
@@ -24,7 +25,7 @@ const CartItems = () => {
             <div key={e.id}>
               <div className="cartitems-format cartitems-format-main">
                 <img className="cartitems-image" src={e.image} alt="" />
-                <p>{e.name}</p>
+                <p className="cartitems-name">{e.name}</p>
                 <p>${e.new_price}</p>
                 <button className="cartitems-quantity">{cartItem[e.id]}</button>
                 <p>${e.new_price * cartItem[e.id]}</p>
@@ -43,11 +44,12 @@ const CartItems = () => {
         }
         return null;
       })}
+      </div>
       <div className="cartCheckOut">
         <div className="checkout-left">
           <div className="subtotal">
-            <p>Total</p>
-            <p>${totalCartAmount}</p>
+            <p>Cart Total</p>
+            <p>${getTotalCartAmount()}</p>
           </div>
           <hr />
           <div className="shipping">
@@ -55,8 +57,8 @@ const CartItems = () => {
             <p>Free</p>
           </div>
           <hr />
-          <p>Total ${totalCartAmount}</p>
-          <button>Proceed To Checkout</button>
+          <p>Total ${getTotalCartAmount()}</p>
+          <button className="checkout-button">Proceed To Checkout</button>
         </div>
         <div className="checkout-right">
           <p>If you have a promo code, Enter here</p>

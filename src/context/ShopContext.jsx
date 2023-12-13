@@ -1,5 +1,7 @@
 import React, { createContext, useEffect, useState } from "react";
 import allProduct from '../components/assets/all_product'
+import CartItems from "../components/CartItems/CartItems";
+import all_product from "../components/assets/all_product";
 
 export const ShopContext = createContext(null)
 
@@ -34,17 +36,19 @@ const ShopContextProvider = (props)=>{
         return totalCart
     }
 
-    const totalCartAmount = ()=>{
-        let totalAmount = 0
-        for(const item in cartItem){
-            if(cartItem[item] >0){
-               let itemInfo = allProduct.find((product)=>product.id === Number(item))
-               totalAmount  += itemInfo.new_price *cartItem[item]
+    const getTotalCartAmount = ()=>{
+        let totalAMount = 0;
+        for(const item in  cartItem){
+            if(cartItem[item]>0){
+                let itemInfo = allProduct.find((product)=>product.id === Number(item))
+                totalAMount +=itemInfo.new_price * cartItem[item]
             }
+           
         }
-        return totalAmount;
+        return totalAMount 
+
     }
-    const contextValue = {totalCartAmount,getTotalCartItems,allProduct,cartItem,addToCart,removeFromCart,setCartItem}
+    const contextValue = {getTotalCartAmount,getTotalCartItems,allProduct,cartItem,addToCart,removeFromCart,setCartItem}
     
     
 
