@@ -4,7 +4,7 @@ import navbarLogo from "../assets/logo.png";
 import cartLogo from "../assets/cart_icon.png";
 import { Link } from "react-router-dom";
 import { ShopContext } from "../../context/ShopContext";
-
+import logomain from "../assets/logomain.png";
 const Navbar = () => {
   const [hamburger, setHamburger] = useState(false);
   const {getTotalCartItems} = useContext(ShopContext)
@@ -23,26 +23,23 @@ const Navbar = () => {
   const menuItems = [
     {
       id: 1,
-      name: "shop",
+      name: "Shop",
     },
     {
       id: 2,
-      name: "men",
+      name: "Gadgets",
     },
     {
       id: 3,
-      name: "women",
+      name: "Accessories",
     },
-    {
-      id: 4,
-      name: "kids",
-    },
+   
   ];
   return (
     <div className="navbar">
       <div className="navbar-logo">
-        <img src={navbarLogo} alt="" />
-        <h1>FASHION</h1>
+        <img src={logomain} alt="" />
+        <h1 style={{ color: 'gold' }}>Maisha Infotech Store</h1>
       </div>
       <div
         className={`navbar-mid-right ${

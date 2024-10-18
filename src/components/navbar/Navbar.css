@@ -62,6 +62,7 @@
     gap: 50px;
 }
 
+
 .login button{
     border: 1px solid #7a7a7a;
     height: 58px;
@@ -73,9 +74,13 @@
     background: white;
     cursor: pointer;
 }
+.login_button:hover {
+    background-color: #ff4141; 
+    color: #fff;
+}
 
 .login button:active{
-    background: #f3f3f3;
+    background:gold;
 }
 .login img{
     cursor: pointer;
