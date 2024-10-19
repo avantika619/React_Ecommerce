@@ -2,7 +2,12 @@ import React from "react";
 import "./Popular.css";
 import data from "../assets/data";
 import Item from "../item/Item";
+
 const Popular = () => {
+  const handleAddToCart = (itemkeyword) => {
+    console.log(`${itemkeyword} added to cart`);
+  };
+
   return (
     <div className="popular">
       <h1 className="heading">POPULAR IN GADGETS </h1>
@@ -17,6 +22,7 @@ const Popular = () => {
               image={item.image}
               old_price={item.old_price}
               new_price={item.new_price}
+              onAddToCart={() => handleAddToCart(item.keyword)}
             />
           );
         })}

@@ -10,7 +10,7 @@ const Footer = () => {
     <div className='footer'>
          <div className="top">
             <img src={logomain} alt="" />
-            <h1 style={{ color: 'gold' }}>Maisha Infotech Store</h1>
+            <h1 style={{ color: '#c59b00' }}>Maisha Infotech Store</h1>
          </div>
          <ul className='footer-menu'>
              <li>Company</li>

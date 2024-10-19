@@ -4,6 +4,9 @@ import newCollections from '../assets/new_collections'
 import Item from '../item/Item'
 
 const NewCollections = () => {
+  const handleAddToCart = (itemkeyword) => {
+    console.log(`${itemkeyword} added to cart`);
+  };
   return (
     <div className='new-collections'>
         <h1>ACCESSORIES</h1>
@@ -18,6 +21,7 @@ const NewCollections = () => {
                     image={item.image}
                     old_price={item.old_price}
                     new_price={item.new_price}
+                    onAddToCart={() => handleAddToCart(item.keyword)}
                   />
                 )
             })

@@ -13,7 +13,11 @@ const Item = (props) => {
       <div className="price">
         <p className="new-price">₹{props.new_price}</p>
         <p className="old-price">₹{props.old_price}</p>
-      </div>
+        </div>
+        <button className="add-to-cart" onClick={props.onAddToCart}>
+        Add to Cart
+      </button>
+     
     </div>
   );
 };

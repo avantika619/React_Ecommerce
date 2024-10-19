@@ -75,12 +75,12 @@
     cursor: pointer;
 }
 .login_button:hover {
-    background-color: #ff4141; 
+    background-color:#8b0000; 
     color: #fff;
 }
 
 .login button:active{
-    background:gold;
+    background:#c59b00;
 }
 .login img{
     cursor: pointer;
@@ -122,6 +122,26 @@
     display: none;
 }
 
+.navbar-search-filter {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+  }
+  
+  .navbar-search {
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    margin-right: 10px;
+    border-radius: 18px;
+  }
+  
+  /* .navbar-filter {
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+  }
+   */
 @media (max-width:1000px){
     .navbar{
         position: relative;

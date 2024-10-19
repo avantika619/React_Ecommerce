@@ -1,33 +1,40 @@
-import p1_img from './product_1.png'
-import p2_img from './product_2.png'
-import p3_img from './product_3.png'
-import p4_img from './product_4.png'
+import headphone from '../assets/headphone.jpg';
+import camera from '../assets/camera.jpg';
+import earbuds from '../assets/earbuds.jpg';
+import drone from '../assets/drone.jpg';
 
 let data_product = [
   {
     id:1,
-    name:"Striped Flutter Sleeve Overlap Collar Peplum Hem Blouse",
-    image:p1_img,
-    new_price:50.00,
-    old_price:80.50,
+    name:"Premium wireless headphones with crystal-clear sound and all-day comfort",
+    image:headphone,
+    new_price:3450.00,
+    old_price:2380.00,
+    brand: "Panasonic",
+    keyword: "headphone",
   },
   {id:2,
-    name:"Striped Flutter Sleeve Overlap Collar Peplum Hem Blouse",
-    image:p2_img,
-    new_price:85.00,
-    old_price:120.50,
+    name:"Capture every moment in stunning detail with our high-resolution digital camera",
+    image:camera,
+    new_price:2285.00,
+    old_price:1420.00,
+    brand: "Dell",
+    keyword: "camera",
   },
   {id:3,
-    name:"Striped Flutter Sleeve Overlap Collar Peplum Hem Blouse",
-    image:p3_img,
-    new_price:60.00,
-    old_price:100.50,
+    name:"Compact and powerful, our wireless earbuds deliver immersive sound on the go",
+    image:earbuds,
+    new_price:3260.00,
+    old_price:1900.00,
+    brand: "Apple",
+    keyword: "earbuds",
   },
   {id:4,
-    name:"Striped Flutter Sleeve Overlap Collar Peplum Hem Blouse",
-    image:p4_img,
-    new_price:100.00,
-    old_price:150.00,
+    name:"Explore the skies with our high-performance drone, perfect for capturing aerial shots.",
+    image:drone,
+    new_price:3100.00,
+    old_price:2150.00,
+    keyword: "drone",
   },
 ];
 

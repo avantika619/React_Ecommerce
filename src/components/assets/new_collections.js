@@ -1,69 +1,44 @@
-import p1_img from "./product_12.png";
-import p2_img from "./product_35.png";
-import p3_img from "./product_14.png";
-import p4_img from "./product_8.png";
-import p5_img from "./product_15.png";
-import p6_img from "./product_2.png";
-import p7_img from "./product_17.png";
-import p8_img from "./product_28.png";
+import keyboard from '../assets/keyboard.jpg';
+import monitor from '../assets/monitor.jpg';
+import ssd from '../assets/ssd.jpg';
+import powerbank from '../assets/powerbank.jpg';
 
 let new_collections = [
   {
-    id: 12,
-    name: "Striped Flutter Sleeve Overlap Collar Peplum Hem Blouse",
-    image: p1_img,
-    new_price: 50.0,
-    old_price: 80.5,
+    id: 5,
+    name: "Enhance your typing experience with our sleek and responsive keyboard.",
+    image: keyboard,
+    new_price: 3150.0,
+    old_price: 2580.0,
+    brand: "Panasonic",
+    keyword: "keyboard",
   },
   {
-    id: 35,
-    name: "Boys Orange Colourblocked Hooded Sweatshirt",
-    image: p2_img,
-    new_price: 85.0,
-    old_price: 120.5,
+    id: 6,
+    name: "Ultra-slim monitor delivering vibrant visuals and exceptional clarity for any task",
+    image: monitor,
+    new_price: 2885.0,
+    old_price: 1920.0,
+    brand: "Apple",
+    keyword: "monitor",
   },
   {
-    id: 14,
-    name: "Men Green Solid Zippered Full-Zip Slim Fit Bomber Jacket",
-    image: p3_img,
-    new_price: 60.0,
-    old_price: 100.5,
+    id: 7,
+    name: "Boost your system's performance with our lightning-fast SSD for rapid data access.",
+    image: ssd,
+    new_price: 3460.0,
+    old_price: 3100.0,
+    keyword: "ssd",
   },
   {
     id: 8,
-    name: "Striped Flutter Sleeve Overlap Collar Peplum Hem Blouse",
-    image: p4_img,
-    new_price: 100.0,
-    old_price: 150.0,
-  },
-  {
-    id: 15,
-    name: "Men Green Solid Zippered Full-Zip Slim Fit Bomber Jacket",
-    image: p5_img,
-    new_price: 50.0,
-    old_price: 80.5,
-  },
-  {
-    id: 2,
-    name: "Striped Flutter Sleeve Overlap Collar Peplum Hem Blouse",
-    image: p6_img,
-    new_price: 85.0,
-    old_price: 120.5,
-  },
-  {
-    id: 17,
-    name: "Men Green Solid Zippered Full-Zip Slim Fit Bomber Jacket",
-    image: p7_img,
-    new_price: 60.0,
-    old_price: 100.5,
-  },
-  {
-    id: 28,
-    name: "Boys Orange Colourblocked Hooded Sweatshirt",
-    image: p8_img,
-    new_price: 100.0,
-    old_price: 150.0,
-  },
+    name: "Stay powered on the go with our portable power bank, designed for fast and reliable charging",
+    image: powerbank,
+    new_price: 3100.0,
+    old_price: 2150.0,
+    brand: "Dell",
+    keyword: "powerbank",
+  }
 ];
 
 export default new_collections;

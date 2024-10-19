@@ -24,6 +24,19 @@ hr{
     grid-template-columns: 1fr 1fr 1fr 1fr;
     column-gap: 100px;
 }
+.add-to-cart {
+    background-color: #c59b00;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .add-to-cart:hover {
+    background-color: #cc7a00;
+  }
+  
 
 @media (max-width:1440px) {
     .item-list{
