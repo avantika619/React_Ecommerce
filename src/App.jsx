@@ -10,10 +10,12 @@ import Footer from "./components/Footer/Footer";
 import menBanner from "./components/assets/banner_mens.png"
 import womenBanner from './components/assets/banner_women.png'
 import kidsBanner from  './components/assets/banner_kids.png'
+import { Provider } from 'react-redux';
+import store from "./redux/store";
 
 const App = () => {
   return (
-    <>
+    <Provider store={store}> {/* Wrap with Redux Provider */}
       <Navbar />
       <Routes>
         <Route path="/" element={<Shop />} />
@@ -27,7 +29,7 @@ const App = () => {
         <Route path="/login" element={<LoginSignup />} />
       </Routes>
       <Footer />
-    </>
+    </Provider>
   );
 };
 
